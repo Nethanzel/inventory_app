@@ -1,0 +1,108 @@
+#mobMenu {
+    border: #1c1d24 3px solid;
+
+}
+
+.mobMenu_hideMenu {
+    display: flex;
+    justify-content: center;
+    top: calc(98.5vh - 60px);
+    position: absolute;
+    width: 100%;
+}
+
+.mobMenu_hideMenu div{
+    display: flex;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient( #ff0000, transparent);
+    color: #000;
+    font-weight: bold;
+}
+
+.mobMenu_coll {
+    width: 100%;
+    height: 91%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.mobMenu_option {
+
+    width: 100%;
+    min-width: 250px;
+    height: 50px;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.mobMenu_option img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+@media only screen and (min-width: 651px) {
+
+    #mobMenu{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #mobMenu{
+        background-color: #fff;
+        height: calc(98.5vh - 60px);
+        width: 0px;
+        max-width: 45vw;
+        position: fixed;
+        left: 0;
+        transition: width .7s ease-out;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+
+    #mobMenu{
+        background-color: #fff;
+        height: calc(98.5vh - 60px);
+        max-width: 60vw;
+        width: 0px;
+        position: fixed;
+        left: 0;
+        transition: width .7s ease-out;
+        overflow: hidden;
+
+    }
+}
+
+@media only screen and (max-width: 330px) {
+
+    #mobMenu{
+        background-color: #fff;
+        height: calc(98.5vh - 60px);
+        max-width: 65vw;
+        width: 0px;
+        position: fixed;
+        left: 0;
+        top: 68px;
+        transition: width .7s ease-out;
+        overflow: hidden;
+
+    }
+}
